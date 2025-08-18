@@ -1,0 +1,13 @@
+CONTEXTO:
+Tengo un dataframe llamado dfFactWeekSales que tiene las ventas semanales de varios items. El objetivo es segmentar los items por patron de demanda.
+INSTRUCCIONES:
+- Calcula el coeficiente de variacion al cuadrado qu es igual a: 
+CV2= (desviacion estandar/media)^2
+- Calcula el ADI que es igual a:
+ADI=total de periodos / periodos con demandas mayor a 0
+- Segmentar segun el siguente criterio:
+ Erratic ADI ≤ 1.32 y CV2 >0.49
+ Lumpy ADI >1.32 y CV2 >0.49
+ Smooth ADI ≤ 1.32 y CV2 ≤ 0.49
+ Intermittent ADI  >1.32 y CV2 ≤ 0.49
+ - La salida debe ser un dataframe con las siguientes columnas: ItemCode, Mean, SD, CV2, ADI y DemandPattern
