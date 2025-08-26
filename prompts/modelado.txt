@@ -1,0 +1,14 @@
+CONTEXTO:
+El objetivo es crear modelos de series de tiempo de pronostico de la demanda. Tengo una base de datos llamada dfFactWeekSales que tiene la siguiente estructura:
+ItemCode (ST, código de item)
+StartWeek(DATE, lunes de la semana)
+Week (ST, Semana en formato ISO 8601 YYYY-Www)
+OriginalQuantity (FLOAT, Cantidad real vendida semanal) 
+NormalizedQuantity(FLOAT, Cantidad normalizada vendida semanal)
+Price (FLOAT, Precio unitario)
+LineTotal (FLOAT, Total vendido en valor semanal)
+AvailableStock (FLOAT, Stock disponible semanal)
+Quiero pronosticar las cantidades vendidas semanales de cada item aplicando los modelos ARIMA, ARIMAX(variable exógena el Price), PROPHET, HOLT WINTER Y ETS.
+
+INSTRUCCIONES:
+- Dame un índice para los pasos a seguir para aplicar los modelos. este índice debe contar con los pasos y las mejores practicas de implementación de modelos de machine learning.
